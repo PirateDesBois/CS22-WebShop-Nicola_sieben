@@ -1,6 +1,3 @@
-import { } from './_functions.js'
-import { } from './_class.js'
-
 // switch theme button ----------------------------------------------------------
 let switchImg = document.querySelectorAll("i")[4];
 let allI = document.querySelectorAll("i");
