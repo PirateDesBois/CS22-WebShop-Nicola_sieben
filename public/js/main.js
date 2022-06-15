@@ -200,16 +200,16 @@ class Product {
         this.sourceV = sourceV;
     }
 }
-let product1 = new Product('Textured Sweater', '$50.00', 'url("../../public/img/fashion/fashion-recent-products-01-1-1.jpg")','url("../../public/img/fashion/fashion-recent-products-01-a-1-1.jpg")');
-let product2 = new Product('Traveller Shirt', '$510.00', 'url("../../public/img/fashion/fashion-recent-products-01-b.jpg")','url("../../public/img/fashion/fashion-recent-products-03-a-1-1.jpg")');
-let product3 = new Product('Crewneck Sweatshirt', '$20.00 - $50.00', 'url("../../public/img/fashion/fashion-recent-products-02-1-1.jpg")','url("../../public/img/fashion/fashion-recent-products-02-a-1-1-1.jpg")');
-let product4 = new Product('Skinny Trouser',"<strike>$200.00</strike>"+" "+ '$160.00', 'url("../../public/img/fashion/fashion-recent-products-04.jpg")','url("../../public/img/fashion/fashion-recent-products-04-a-1.jpg")');
-let product5 = new Product('High Neck Sweater', "<strike>$40.00</strike>"+" "+ '$35.00', 'url("../../public/img/fashion/fashion-recent-products-05-1.jpg")','url("../../public/img/fashion/fashion-recent-products-05-a-1.jpg")');
-let product6 = new Product('Sleeve Sweater', "<strike>$140.00</strike>"+" "+ '$120.00', 'url("../../public/img/fashion/fashion-recent-products-06-1.jpg")','url("../../public/img/fashion/fashion-recent-products-06-a-1.jpg")');
-let product7 = new Product('Pocket Sweatshirt', '$410.00',' url("../../public/img/fashion/fashion-recent-products-07-1.jpg")','url("../../public/img/fashion/fashion-recent-products-07-a-1.jpg")');
-let product8 = new Product('Top With Pleated', '$20.00 - $50.00', 'url("../../public/img/fashion/fashion-recent-products-08-1.jpg")','url("../../public/img/fashion/fashion-recent-products-08-a.jpg")');
-let product9 = new Product('Cotton Sweater', '$155.00', 'url("../../public/img/fashion/fashion-recent-products-10-1.jpg")','url("../../public/img/fashion/fashion-recent-products-10-a-1.jpg")');
-let product10 = new Product('Texture Plain Regular',"<strike>$85.00 </strike>"+" "+ '$70.00', 'url("../../public/img/fashion/fashion-recent-products-01-d.jpg")','url("../../public/img/fashion/fashion-recent-products-09-a-1-1.jpg")');
+let product1 = new Product('Textured Sweater', '$50.00', 'url("/public/img/fashion/fashion-recent-products-01-1-1.jpg")','url("/public/img/fashion/fashion-recent-products-01-a-1-1.jpg")');
+let product2 = new Product('Traveller Shirt', '$510.00', 'url("/public/img/fashion/fashion-recent-products-01-b.jpg")','url("/public/img/fashion/fashion-recent-products-03-a-1-1.jpg")');
+let product3 = new Product('Crewneck Sweatshirt', '$20.00 - $50.00', 'url("/public/img/fashion/fashion-recent-products-02-1-1.jpg")','url("/public/img/fashion/fashion-recent-products-02-a-1-1-1.jpg")');
+let product4 = new Product('Skinny Trouser',"<strike>$200.00</strike>"+" "+ '$160.00', 'url("/public/img/fashion/fashion-recent-products-04.jpg")','url("/public/img/fashion/fashion-recent-products-04-a-1.jpg")');
+let product5 = new Product('High Neck Sweater', "<strike>$40.00</strike>"+" "+ '$35.00', 'url("/public/img/fashion/fashion-recent-products-05-1.jpg")','url("/public/img/fashion/fashion-recent-products-05-a-1.jpg")');
+let product6 = new Product('Sleeve Sweater', "<strike>$140.00</strike>"+" "+ '$120.00', 'url("/public/img/fashion/fashion-recent-products-06-1.jpg")','url("/public/img/fashion/fashion-recent-products-06-a-1.jpg")');
+let product7 = new Product('Pocket Sweatshirt', '$410.00',' url("/public/img/fashion/fashion-recent-products-07-1.jpg")','url("/public/img/fashion/fashion-recent-products-07-a-1.jpg")');
+let product8 = new Product('Top With Pleated', '$20.00 - $50.00', 'url("/public/img/fashion/fashion-recent-products-08-1.jpg")','url("/public/img/fashion/fashion-recent-products-08-a.jpg")');
+let product9 = new Product('Cotton Sweater', '$155.00', 'url("/public/img/fashion/fashion-recent-products-10-1.jpg")','url("/public/img/fashion/fashion-recent-products-10-a-1.jpg")');
+let product10 = new Product('Texture Plain Regular',"<strike>$85.00 </strike>"+" "+ '$70.00', 'url("/public/img/fashion/fashion-recent-products-01-d.jpg")','url("/public/img/fashion/fashion-recent-products-09-a-1-1.jpg")');
 let productsList = [product1, product2, product3, product4, product5, product6, product7, product8, product9, product10];
 console.log(productsList);
 // Creation des infos produits -----------------------------------------------------------------------------------
