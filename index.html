@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Projet-js</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel='stylesheet' href='./public/css/style.css'>
+</head>
+
+<body>
+    <!-- Header-------------------------------------------------------- -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="brand" src="public/img/logo.png"
+                        alt="nom de la marque"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#presentation">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">TESTIMONIAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">JOURNAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <ul class="d-flex justify-content-center mt-2 ps-0">
+                    <li class="basket mx-2"><i class="scrolchange fas fa-search text-dark"></i></li>
+                    <li class="basket mx-2"><i class="scrolchange far fa-user text-dark"></i></li>
+                    <li class="basket mx-2"><i class="scrolchange far fa-heart text-dark position-relative"><span class="rikiki d-none"></span></i></li>
+                    <li class="basket mx-2"><i class="scrolchange fas fa-shopping-basket text-dark position-relative"><span class="rikiki d-none"></span></i>
+                    </li>
+                    <li class="basket mx-2"><i class="scrolchange fas fa-toggle-on text-dark"></i></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- modal-1 -->
+        <div class="d-flex justify-content-center position-relative z-index1 pt-5">
+            <div class="modal-off" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content bgModal">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Welcome Back</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control rounded-pill" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">Because we want to know if you are the one
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control rounded-pill" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input bg-dark" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn log btn-dark">Log-in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /modal-1 -->
+        <!-- modal-2 -->
+        <div class="d-flex justify-content-center position-relative z-index1 pt-5">
+            <div class="modal2-off" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content bgModal">
+                        <div class="modal-header">
+                            <h5 class="modal-title">You're Already Connected</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn log btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /modal-2 -->
+        <!-- modal-3 -->
+        <div class="d-flex justify-content-center position-relative z-index1">
+            <div class="modal3-off" tabindex="-1">
+                <div class="modal-dialog modal-fullscreen-sm-down">
+                    <div class="modal-content bgModal">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Wishlist</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body modal-wish">
+                        
+                        <h5>You had <span class="wish text-dark"></span> products on your wishlist</h5>
+                            
+
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal-3 -->
+    </header>
+    <!-- /Header-------------------------------------------------------- -->
+    <!-- Introduction-------------------------------------------------------- -->
+    <section id="bag">
+        <div class="container-fluid">
+            <div class="row mt-5 justify-content-center">
+                <div
+                    class="col-xl-5 col-md-5 col-sm-12 d-flex justify-content-center bag flex-column textSection1 mt-5  mt-md-2 mt-sm-0 pb-5">
+                    <p class="text-justify pTiretDark"> &#x2015; NEW COLLECTION 2022</p>
+                    <h2 class="text-justify fw-bold">Brown leather<br> women's bags</h2>
+                    <p class="paragrey center">Hic quibusdam veniam sed illo praesentium rem ad et impedit beatae harum.
+                    </p>
+                    <div class="d-flex flex-nowrap">
+                        <p class=" text-justify text-decoration-line-through pe-3">Regular $69.99</p>
+                        <p class="fw-bold">Just $59.00</p>
+                    </div>
+                    <button type="button" class="btn btn-dark w-50 btnStyle">SHOP WOMEN</button>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12"><img class="imgSect1 img-fluid"
+                        src="./public/img/collect/one-page-slider-01_1.png" alt="sac"></div>
+
+            </div>
+        </div>
+        <h1 class="bigWomen text-light text-center">womens</h1>
+    </section>
+    <!-- /Introduction-------------------------------------------------------- -->
+    <!-- Presentation-------------------------------------------------------- -->
+    <section id="presentation">
+        <div class="js1 bg-light">
+            <div class="container">
+                <div class="row pt-6">
+                    <div class="col-12">
+                        <ul class="listSect2 d-flex justify-content-center  flex-row my-5">
+                            <li class="text-uppercase mx-5 mini mx-sm-2 paragrey "><i
+                                    class="fa-solid me-3 fa-globe "></i>free
+                                standard shipping</li>
+                            <li class="text-uppercase mx-5 mini mx-sm-2 paragrey"><i
+                                    class="fa-solid me-3 fa-wallet "></i>f100% money
+                                back</li>
+                            <li class="text-uppercase mx-5 mini mx-sm-2 paragrey"><i
+                                    class="fa-solid me-3 fa-gift "></i>gifts
+                                for
+                                members</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 p-2"><img class="img-fluid " src="./public/img/collect/one-page-collection-06.jpg"
+                            alt="mec"></div>
+                    <div class="col-3 p-2"><img class="img-fluid" src="./public/img/collect/one-page-collection-05.jpg"
+                            alt="mec2"></div>
+                    <div class="col-3 p-2"><img class="img-fluid" src="./public/img/collect/one-page-collection-01.jpg"
+                            alt="fille"></div>
+                    <div class="col-3 p-2"><img class="img-fluid" src="./public/img/collect/one-page-collection-03.jpg"
+                            alt="fille2"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center ">
+
+                    <div class="col-xl-5 col-md-5 col-sm-12 mt-5 mb-5">
+                        <p class="pTiretDark center"> &#x2015; About company</p>
+                        <p class="fs-5 fw-bold center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Deleniti,
+                            corrupti atque alias consequatur !</p>
+                    </div>
+                    <div class="col-xl-5 col-md-5 col-sm-12 mt-5 mb-5">
+                        <p class="paragrey ps-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. At architecto
+                            tempore culpa atque neque voluptatem consequuntur numquam! Animi rerum, reprehenderit
+                            temporibus nam odio quia alias, mollitia quas rem, ducimus minus. Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Debitis, commodi dolorum corporis odio provident molestias
+                            facilis at. Modi, magni laboriosam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Presentation-------------------------------------------------------- -->
+    <!-- Celebrity-------------------------------------------------------- -->
+    <section id="celebrity">
+        <div class="container">
+            <div class="row justify-content-center my-5">
+                <div class="col-xl-5 col-md-5 col-sm-12 mt-5">
+                    <img class="img-fluid" src="./public/img/collect/one-page-img-03.png" alt="truc zarbi">
+                </div>
+                <div class="col-xl-5 col-md-12 col-sm-12 mt-5 mt-md-2 ps-xl-5 ps-md-5 ps-sm-2">
+                    <p class="text-justify pTiretDark center pt-5"> &#x2015; FASHION BRAND THAT CONTEMPORARY</p>
+                    <h5 class="text-justify center">Latest celebrity style fashion and outfit trends</h5>
+                    <p class="paragrey center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                        blanditiis
+                        totam dolorum sapiente in. Corrupti recusandae modi beatae velit, aliquam veniam quia atque cum
+                        natus exercitationem perferendis quibusdam alias optio in nulla consectetur omnis! Omnis?</p>
+                    <p class="paragrey center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio neque
+                        illum
+                        cupiditate excepturi ratione quasi unde a nisi. Eos, soluta!</p>
+                    <div class="divcentre">
+                        <button type="button" class="btn btn-dark btnStyle w-50 center">MORE INFORMATION</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Celebrity-------------------------------------------------------- -->
+    <!-- products-------------------------------------------------------- -->
+    <section id="products" class="js1 bg-light pt-1 pb-5">
+    </section>
+    <!-- /Products-------------------------------------------------------- -->
+    <!-- Testimonial-------------------------------------------------------- -->
+    <section id="testimonial">
+        <div class="container-fluid">
+            <div class="row align-items-center flex-column my-5 pt-6">
+                <div class="col-4 ">
+                    <h5 class="fw-bold text-center">Testimonial</h5>
+                    <p class="text-center paragrey">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.ploploploploplop
+                        Repudiandae, sint.</p>
+                </div>
+            </div>
+            <!-- carousel -->
+            <div class="container-fluid parentCaroussel">
+
+                <i class="fas fa-angle-left fa-2x"></i>
+                <i class="fas fa-angle-right fa-2x"></i>
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+                <div class="row mb-8 container-caroussel flex-nowrap">
+
+                    <div class="col-4 z-index10 carousselElement">
+                        <div class="js1 bg-light rounded-3 pt-5 pb-4 px-5">
+                            <p class="pTiret text-uppercase text-justify">We love digital agencies</p>
+                            <p class="paragrey m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                libero
+                                doloremque numquam voluptates optio aliquid dicta nesciunt aut alias, modi!</p>
+                        </div>
+                        <i class="fa-solid fs-1 text-light fa-caret-down ms-5 mt-n5"></i>
+                        <div class="d-flex align-items-center mt-3 mx-3">
+                            <img class="rounded-pill w-25" src="./public/img/testimonials/image-2.png" alt="avis1">
+                            <div class="Pgroup mx-3">
+                                <p class="text-uppercase pTiret m-0">maria caramba</p>
+                                <p class="text-uppercase paragrey">manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 z-index10 carousselElement">
+                        <div class="js1 bg-light rounded-3 pt-5 pb-4 px-5">
+                            <p class="pTiret text-uppercase text-justify">We love digital agencies</p>
+                            <p class="paragrey m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                libero
+                                doloremque numquam voluptates optio aliquid dicta nesciunt aut alias, modi!</p>
+                        </div>
+                        <i class="fa-solid fs-1 text-light fa-caret-down ms-5 mt-n5"></i>
+                        <div class="d-flex align-items-center mt-3 mx-3">
+                            <img class="rounded-pill w-25" src="./public/img/testimonials/image-1-1.png" alt="avis1">
+                            <div class="Pgroup mx-3">
+                                <p class="text-uppercase pTiret m-0">asahi shikitoko</p>
+                                <p class="text-uppercase paragrey">designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 z-index10 carousselElement">
+                        <div class="js1 bg-light rounded-3 pt-5 pb-4 px-5">
+                            <p class="pTiret text-uppercase text-justify">We love digital agencies</p>
+                            <p class="paragrey m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                libero
+                                doloremque numquam voluptates optio aliquid dicta nesciunt aut alias, modi!</p>
+                        </div>
+                        <i class="fa-solid fs-1 text-light fa-caret-down ms-5 mt-n5"></i>
+                        <div class="d-flex align-items-center mt-3 mx-3">
+                            <img class="rounded-pill w-25" src="./public/img/testimonials/image-3.png" alt="avis1">
+                            <div class="Pgroup mx-3">
+                                <p class="text-uppercase pTiret m-0">plop blop</p>
+                                <p class="text-uppercase paragrey">director</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 z-index10 carousselElement">
+                        <div class="js1 bg-light rounded-3 pt-5 pb-4 px-5">
+                            <p class="pTiret text-uppercase text-justify">We love digital agencies</p>
+                            <p class="paragrey m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                libero
+                                doloremque numquam voluptates optio aliquid dicta nesciunt aut alias, modi!</p>
+                        </div>
+                        <i class="fa-solid fs-1 text-light fa-caret-down ms-5 mt-n5"></i>
+                        <div class="d-flex align-items-center mt-3 mx-3">
+                            <img class="rounded-pill w-25" src="./public/img/testimonials/image-2.png" alt="avis1">
+                            <div class="Pgroup mx-3">
+                                <p class="text-uppercase pTiret m-0">maria caramba</p>
+                                <p class="text-uppercase paragrey">manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 z-index10 carousselElement">
+                        <div class="js1 bg-light rounded-3 pt-5 pb-4 px-5">
+                            <p class="pTiret text-uppercase text-justify">We love digital agencies</p>
+                            <p class="paragrey m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                libero
+                                doloremque numquam voluptates optio aliquid dicta nesciunt aut alias, modi!</p>
+                        </div>
+                        <i class="fa-solid fs-1 text-light fa-caret-down ms-5 mt-n5"></i>
+                        <div class="d-flex align-items-center mt-3 mx-3">
+                            <img class="rounded-pill w-25" src="./public/img/testimonials/image-1-1.png" alt="avis1">
+                            <div class="Pgroup mx-3">
+                                <p class="text-uppercase pTiret m-0">asahi shikitoko</p>
+                                <p class="text-uppercase paragrey">designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 z-index10 carousselElement">
+                        <div class="js1 bg-light rounded-3 pt-5 pb-4 px-5">
+                            <p class="pTiret text-uppercase text-justify">We love digital agencies</p>
+                            <p class="paragrey m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                libero
+                                doloremque numquam voluptates optio aliquid dicta nesciunt aut alias, modi!</p>
+                        </div>
+                        <i class="fa-solid fs-1 text-light fa-caret-down ms-5 mt-n5"></i>
+                        <div class="d-flex align-items-center mt-3 mx-3">
+                            <img class="rounded-pill w-25" src="./public/img/testimonials/image-3.png" alt="avis1">
+                            <div class="Pgroup mx-3">
+                                <p class="text-uppercase pTiret m-0">plop blop</p>
+                                <p class="text-uppercase paragrey">director</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 z-index10 carousselElement">
+                        <div class="js1 bg-light rounded-3 pt-5 pb-4 px-5">
+                            <p class="pTiret text-uppercase text-justify">We love digital agencies</p>
+                            <p class="paragrey m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                libero
+                                doloremque numquam voluptates optio aliquid dicta nesciunt aut alias, modi!</p>
+                        </div>
+                        <i class="fa-solid fs-1 text-light fa-caret-down ms-5 mt-n5"></i>
+                        <div class="d-flex align-items-center mt-3 mx-3">
+                            <img class="rounded-pill w-25" src="./public/img/testimonials/image-2.png" alt="avis1">
+                            <div class="Pgroup mx-3">
+                                <p class="text-uppercase pTiret m-0">maria caramba</p>
+                                <p class="text-uppercase paragrey">manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 z-index10 carousselElement">
+                        <div class="js1 bg-light rounded-3 pt-5 pb-4 px-5">
+                            <p class="pTiret text-uppercase text-justify">We love digital agencies</p>
+                            <p class="paragrey m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                libero
+                                doloremque numquam voluptates optio aliquid dicta nesciunt aut alias, modi!</p>
+                        </div>
+                        <i class="fa-solid fs-1 text-light fa-caret-down ms-5 mt-n5"></i>
+                        <div class="d-flex align-items-center mt-3 mx-3">
+                            <img class="rounded-pill w-25" src="./public/img/testimonials/image-1-1.png" alt="avis1">
+                            <div class="Pgroup mx-3">
+                                <p class="text-uppercase pTiret m-0">asahi shikitoko</p>
+                                <p class="text-uppercase paragrey">designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 z-index10 carousselElement">
+                        <div class="js1 bg-light rounded-3 pt-5 pb-4 px-5">
+                            <p class="pTiret text-uppercase text-justify">We love digital agencies</p>
+                            <p class="paragrey m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                libero
+                                doloremque numquam voluptates optio aliquid dicta nesciunt aut alias, modi!</p>
+                        </div>
+                        <i class="fa-solid fs-1 text-light fa-caret-down ms-5 mt-n5"></i>
+                        <div class="d-flex align-items-center mt-3 mx-3">
+                            <img class="rounded-pill w-25" src="./public/img/testimonials/image-3.png" alt="avis1">
+                            <div class="Pgroup mx-3">
+                                <p class="text-uppercase pTiret m-0">plop blop</p>
+                                <p class="text-uppercase paragrey">director</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- carousel -->
+        </div>
+    </section>
+    <!-- /Testimonial-------------------------------------------------------- -->
+    <!-- Blog-------------------------------------------------------- -->
+    <section id="blog" class="js1 bg-light">
+        <div class="row align-items-center flex-column pt-7 pb-3 m-0">
+            <div class="col-xl-4 col-md-4 col-sm-12 ">
+                <h5 class="fw-bold text-center">Latest blog</h5>
+                <p class="text-center paragrey">Lorem ipsum dolor sit amet consectetur adipisicing elit.ploploploploplop
+                    Repudiandae, sint.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row pb-6">
+                <div class="col-xl-3 col-md-3 col-sm-4"><img class="img-fluid"
+                        src="./public/img/blog/blog-listing-img63-578x771.jpg" alt="">
+                    <div class="text">
+                        <p class="btnStyle bg-dark d-inline-block py-1 px-2 mt-4 text-uppercase">photography</p>
+                        <p class="pBlog">Fashion is a part of culture and it's about more than just dress</p>
+                        <p class=" pTiret">&#x2015; By Sara jay</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-4"><img class="img-fluid"
+                        src="./public/img/blog/blog-listing-img58-578x771.jpg" alt="">
+                    <div class="text">
+                        <p class="btnStyle bg-dark d-inline-block py-1 px-2 mt-4 text-uppercase">photography</p>
+                        <p class="pBlog">Fashion is a part of culture and it's about more than just dress</p>
+                        <p class=" pTiret">&#x2015; By Tina Carapova</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-4"><img class="img-fluid"
+                        src="./public/img/blog/blog-listing-img59-578x771.jpg" alt="">
+                    <div class="text">
+                        <p class="btnStyle bg-dark d-inline-block py-1 px-2 mt-4 text-uppercase">photography</p>
+                        <p class="pBlog">Fashion is a part of culture and it's about more than just dress</p>
+                        <p class=" pTiret">&#x2015; By Yamete Kudasay</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-4"><img class="img-fluid"
+                        src="./public/img/blog/blog-listing-img60-578x771.jpg" alt="">
+                    <div class="text">
+                        <p class="btnStyle bg-dark d-inline-block py-1 px-2 mt-4 text-uppercase">photography</p>
+                        <p class="pBlog">Fashion is a part of culture and it's about more than just dress</p>
+                        <p class=" pTiret">&#x2015; By Plop Vlop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Blog-------------------------------------------------------- -->
+    <!-- Contact-------------------------------------------------------- -->
+    <section id="contact">
+        <div class="container-fluid">
+            <div class="row blogSize">
+                <div class="col p-0 bg1"></div>
+                <div class="col-xl-3 col-md-5 col-sm-6 overF bgBody d-flex align-items-center flex-column p-0">
+                    <div class="row mt-4">
+                        <div class="col-3"><i class="fa-solid fa-location-dot pt-7 px-5"></i></div>
+                        <div class="col-7 p-0 ">
+                            <p class="pContact text-uppercase text-justify pt-6 ">adress details</p>
+                            <p class="paragrey">401 Broadway, 24th floor iceland, iceland 10013.</p>
+                        </div>
+                        <div class="col-3"><i class="fa-solid fa-location-dot p-5 "></i></div>
+                        <div class="col-7 p-0">
+                            <p class="pContact text-uppercase text-justify ">adress details</p>
+                            <p class="paragrey">401 Broadway, 24th floor iceland, iceland 10013.</p>
+                        </div>
+                        <div class="col-3"><i class="fa-solid fa-location-dot p-5
+                             "></i></div>
+                        <div class="col-7 p-0 ">
+                            <p class="pContact text-uppercase text-justify ">adress details</p>
+                            <p class="paragrey">401 Broadway, 24th floor iceland, iceland 10013.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-12 p-0 bg2">
+                    <div class="divform p-7">
+                        <p class="pForm">Simply fill out the form and we'll be in touch with you soon</p>
+
+                        <form action="#">
+                            <input type="text" class="formtrans center" value="Name"><br>
+                            <input type="text" class="formtrans center" value="E-mail"><br>
+                            <input type="text" class="formtrans center" value="Subject"><br>
+                            <textarea class="formtrans center" rows="4" cols="50">Your Message</textarea>
+                            <div class="divcentre">
+                                <button type="button" class="btn btnTrans mt-3">Send Message</button>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 js1 bg-light d-flex justify-content-center">
+                    <p class="text-uppercase my-6 pTiretDark">&#x2015; instagram @hongo fashion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Contact-------------------------------------------------------- -->
+    <!-- Footer-------------------------------------------------------- -->
+    <footer class="container-fluid">
+        <div class="row bg-dark border-bottom border-2 border-secondary justify-content-center">
+            <div class="col-xl-6 col-md-12 col-sm-12">
+                <div class="row">
+                    <div
+                        class="col-xl-6 col-md-12 col-sm-12 d-flex flex-nowrap align-items-center justify-content-center">
+                        <p class="text-uppercase pFooter pt-4 pe-3">last chance to win our discount</p>
+                    </div>
+                    <div class="col-xl-6 col-md-12 col-sm-12">
+                        <div class="input-group mb-3 pt-4">
+                            <input type="text" class="form-control bgDarkGrey text-dark border-0"
+                                placeholder="Enter your e-mail..." aria-label="plop" aria-describedby="basic-addon2">
+                            <button class="input-group-text text-secondary bgDarkGrey border-0"
+                                id="basic-addon2">SUBSCRIBE<br><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-md-12 col-sm-12 d-flex flex-nowrap align-items-center justify-content-center">
+                <p class="text-uppercase pFooter pt-3 pe-3">on social networks</p>
+                <i class="fa-brands text-secondary p-2 fa-facebook-f"></i>
+                <i class="fa-brands text-secondary p-2 fa-twitter"></i>
+                <i class="fa-brands text-secondary p-2 fa-linkedin"></i>
+                <i class="fa-brands text-secondary p-2 fa-instagram"></i>
+                <i class="fa-brands text-secondary p-2 fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="row bg-dark justify-content-center">
+            <div class="col-xl-2 col-md-2 col-sm-12 pt-4">
+                <img src="./public/img/footer-logo.png" alt="logo">
+                <p class="paragrey pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis
+                    officiis maxime beatae itaque repellat hic accusamus! Voluptate, eius! Atque.</p>
+            </div>
+            <div class="col-xl-2 col-md-2 col-sm-12 p-4">
+                <p class="pFooter text-uppercase center">categories</p>
+                <ul class="p-0">
+                    <li class="listSect2"><a class="paragrey text-decoration-none" href="#">Women Collection</a></li>
+                    <li class="listSect2"><a class="paragrey text-decoration-none href=" #">Men Collection</a></li>
+                    <li class="listSect2"><a class="paragrey text-decoration-none href=" #">Child Collection</a></li>
+                    <li class="listSect2"><a class="paragrey text-decoration-none href=" #">Accesories</a></li>
+                    <li class="listSect2"><a class="paragrey text-decoration-none href=" #">Collections</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-2 col-md-2 col-sm-12 p-4">
+                <p class="pFooter text-uppercase center">customers</p>
+                <ul class="p-0">
+                    <li class="listSect2"><a class="paragrey text-decoration-none" href="#">Help and support</a></li>
+                    <li class="listSect2"><a class="paragrey text-decoration-none href=" #">Shipping and delivery</a>
+                    </li>
+                    <li class="listSect2"><a class="paragrey text-decoration-none href=" #">payements methods</a></li>
+                    <li class="listSect2"><a class="paragrey text-decoration-none href=" #">Terms and conditions</a>
+                    </li>
+                    <li class="listSect2"><a class="paragrey text-decoration-none href=" #">Policy privacy</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-2 col-md-2 col-sm-12 p-4">
+                <p class="pFooter text-uppercase center">company</p>
+                <ul class="p-0">
+                    <li class="listSect2"><a class="paragrey text-decoration-none" href="#">About company</a></li>
+                    <li class="listSect2"><a class="paragrey text-decoration-none href=" #">Our services</a></li>
+                    <li class="listSect2"><a class="paragrey text-decoration-none href=" #">Get the voucher</a></li>
+                    <li class="listSect2"><a class="paragrey text-decoration-none href=" #">Store locator</a></li>
+                    <li class="listSect2"><a class="paragrey text-decoration-none href=" #">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-2 col-md-2 col-sm-12 p-4">
+                <p class="pFooter text-uppercase center">Follow us on instagram</p>
+                <div class="row flex-nowrap justify-content-center">
+                    <div class="col-3"><img class="img-fluid" src="./public/img/footer/infa-01.jpg" alt="a"></div>
+                    <div class="col-3"><img class="img-fluid" src="./public/img/footer/infa-02.jpg" alt="b"></div>
+                    <div class="col-3"><img class="img-fluid" src="./public/img/footer/infa-03.jpg" alt="c"></div>
+                    <div class="col-3"><img class="img-fluid" src="./public/img/footer/infa-04.jpg" alt="d"></div>
+                </div>
+                <div class="row flex-nowrap pt-3">
+                    <div class="col-3"><img class="img-fluid" src="./public/img/footer/infa-05.jpg" alt="a"></div>
+                    <div class="col-3"><img class="img-fluid" src="./public/img/footer/infa-06.jpg" alt="b"></div>
+                    <div class="col-3"><img class="img-fluid" src="./public/img/footer/infa-07.jpg" alt="c"></div>
+                    <div class="col-3"><img class="img-fluid" src="./public/img/footer/infa-08.jpg" alt="d"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-black justify-content-center align-items-center">
+            <div class="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center pt-3">
+                <p class="paragrey text-capitalize">@2022 hongo is proudly powered by diaphragm creation</p>
+            </div>
+            <div class="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center"><img
+                    src="./public/img/footer-payment-icon.png" alt="moyens de payement"></div>
+        </div>
+
+
+    </footer>
+    <!-- /Footer-------------------------------------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type='module' src='./public/js/main.js'></script>
+</body>
+
+</html>

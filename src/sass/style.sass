@@ -1,0 +1,316 @@
+@import './_variables'
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'
+@import './_font'
+@import './_icons'
+*
+    font-family: "poppins"
+    padding: 0px
+    margin: 0px
+// colors ------------------------------------------------------------------------------
+body
+    background-color: #F6ECE2
+.bgBody
+    background-color: #F6ECE2
+.bgDarkGrey
+    background-color: #474747da
+.bg-black
+    background-color: #070707
+.bg-triste
+    background-color: #474747
+.bg-triste2
+    background-color: #474747
+.text-triste
+    color: #474747
+.paraBody
+    color: #F6ECE2
+
+// colors ------------------------------------------------------------------------------
+.z-index1
+    z-index: 1
+.navbar
+    z-index: 2
+.navbar-collapse
+    flex-grow: 0
+// Modifications sur le texte -----------------------------------------------------------
+.textW
+    color: white !important
+.paragrey
+    font-weight: bold
+    font-size: 13px
+    color: #888888da
+    line-height: 20px
+.paralight
+    font-weight: bold
+    font-size: 13px
+    color: #ffffffda
+    line-height: 20px
+.paralight2
+    font-weight: bold
+    font-size: 12px
+    color: #ffffff
+    line-height: 20px
+.paralight3
+    font-weight: bold
+    font-size: 12px
+    color: #ffffff
+    line-height: 20px
+.pBlog
+    font-weight: bold
+    font-size: 15px
+    color: #616161da
+    line-height: 20px
+.pTiret
+    font-weight: bold
+    font-size: 12px
+    color: #818181b2
+    line-height: 20px
+.pTiretDark
+    font-weight: bold
+    font-size: 12px
+    color: #5a5a5ac4
+    line-height: 20px
+.pContact
+    font-weight: bold
+    font-size: 12px
+    color: #4e4e4eda
+.pForm
+    font-weight: bold
+    font-size: 20px
+    color: #444444da
+    line-height: 20px
+.pFooter
+    font-weight: bold
+    font-size: 15px
+    color: #a1a1a1da
+    line-height: 20px
+// Modifications sur le texte -----------------------------------------------------------
+.btnStyle
+    font-weight: bold
+    font-size: 10px
+    color: white
+    line-height: 20px
+.brand
+    width: 70%
+    height: auto
+.navbar-light
+    border-bottom: 1px solid #9e9e9e4b
+.nav-link
+    font-size: 15px
+    font-weight: bold
+.basket
+    list-style-type: none
+.imgSect1
+    width: 600px
+    height: auto
+.btnSect1
+    font-size: 10px
+#bag
+    overflow: hidden
+.bigWomen
+    font-size: 200px
+    margin-bottom: -90px
+.listSect2
+    list-style-type: none
+    >a:hover
+        color: white
+.input-group-text:hover
+    background-color: white
+.fa-brands:hover
+    color: white !important
+.overF
+    overflow: hidden
+// card --------------------------------------------------------------------------------
+.bg1
+    background-image: url("../../public/img/collect/one-page-img-04.jpg")
+    background-size: cover
+.bg2
+    background-image: linear-gradient(to bottom, rgb(246, 236, 226), rgba(10, 10, 10, 0.753)), url("../../public/img/fashion/fashion-brand-parallax-bg.jpg")
+    background-size: cover
+// card --------------------------------------------------------------------------------
+// formulaire --------------------------------------------------------------------------
+.formtrans
+    background: rgba(0, 0, 0, 0)
+    border: none
+    outline: none
+    border-bottom: 1px solid #363636ee
+    color: #ffffffee
+    font-weight: bold
+    width: 100%
+    padding: 15px 0px 15px 0px
+.btnTrans
+    background: rgba(0, 0, 0, 0)
+    border: 2px solid white
+    color: white
+// formulaire --------------------------------------------------------------------------
+// Modal----------------------------------------------------------
+.modal-off
+    display: none
+.modal-on
+    display: block
+    position: fixed
+.bgModal
+    background-color: transparentize(#F6ECE2,0.2)
+.modal2-off
+    display: none
+.modal2-on
+    display: block
+    position: fixed
+.modal3-off
+    display: none
+.modal3-on
+    display: block
+    position: fixed
+.divWishImg
+    width: 80px
+    height: 100px
+    background-size: cover
+// Modal----------------------------------------------------------
+//carousel -------------------------------------------------------
+.parentCaroussel
+    position: relative
+    overflow: hidden
+.container-caroussel
+    width: 200vh
+    transition: 0.6s ease-in-out
+    -webkit-transition: 0.6s ease-in-out
+.move-right
+    transform: translateX(-100%)
+.move-left
+    transform: translateX(0%)
+.z-index10
+    z-index: -1
+.fa-angle-left
+    position: absolute
+    left: 0px
+    top: 35%
+    z-index: 1
+    &:hover
+        color: white
+.fa-angle-right
+    position: absolute
+    right: 0px
+    top: 35%
+    z-index: 1
+    &:hover
+        color: white
+.dot1
+    position: absolute
+    left: 48%
+    bottom: 4%
+    cursor: pointer
+    height: 15px
+    width: 15px
+    margin: 0 2px
+    background-color: #bbb
+    border-radius: 50%
+    display: inline-block
+    transition: background-color 0.6s ease
+    &:hover
+        background-color: #717171
+.dot2
+    position: absolute
+    left: 49%
+    bottom: 4%
+    cursor: pointer
+    height: 15px
+    width: 15px
+    margin: 0 2px
+    background-color: #bbb
+    border-radius: 50%
+    display: inline-block
+    transition: background-color 0.6s ease
+    &:hover
+        background-color: #717171
+.border-black
+    border: 2px solid black
+//carousel -------------------------------------------------------
+//products -------------------------------------------------------
+.card
+    z-index: 0
+    height: 400px
+    background-size: cover
+    background-repeat: no-repeat
+.fa-heart
+    right: 0px
+.productbtn2
+    width: 50%
+    height: 10%
+    right: 0px
+    bottom: 0px
+.productbtn1
+    width: 50%
+    height: 10%
+    left: 0px
+    bottom: 0px
+    border-right: 1px solid grey
+.rikiki
+    position: absolute
+    top: 5px
+    left: 10px
+    font-size: 12px
+    color: white
+    border: 2px solid black
+    border-radius: 50%
+    background-color: black
+    width: 15px
+//products -------------------------------------------------------
+//scrollBar ------------------------------------------------------
+::-webkit-scrollbar
+    width: 11px
+    height: 11px
+::-webkit-scrollbar-button
+    width: 0px
+    height: 0px
+::-webkit-scrollbar-thumb
+    background: rgb(246,237,226)
+    background: linear-gradient(180deg, rgba(246,237,226,1) 0%, rgba(0,0,0,0.9948354341736695) 100%)
+    border: 0px none #ffffff
+    border-radius: 50px
+    &:hover
+        background: rgb(246,237,226)
+        background: linear-gradient(180deg, rgba(246,237,226,1) 0%, rgba(0,0,0,0.9948354341736695) 100%)
+    &:active
+        background: rgb(246,237,226)
+        background: linear-gradient(180deg, rgba(246,237,226,1) 0%, rgba(0,0,0,0.9948354341736695) 100%)
+::-webkit-scrollbar-track
+    background: transparent #ff000000
+    border: 0px none #ffffff00
+    border-radius: 50px
+    &:hover
+        background: #66666600
+    &:active
+        background: #05050500
+::-webkit-scrollbar-corner
+    background: transparent
+//scrollBar ------------------------------------------------------
+// responsive ----------------------------------------------------
+//big Screen :
+@media (min-width: 992px)
+
+//tablettes :
+@media ( min-width: 576px  ) and ( max-width: 768px  )
+    .bigWomen
+        font-size: 100px
+        margin-bottom: -45px
+//Gsm :
+@media (max-width: 576px)
+    .bigWomen
+        font-size: 50px
+        margin-bottom: -20px
+    .bag
+        align-items: center
+        justify-content: center
+    .center
+        text-align: center
+    .divcentre
+        display: flex
+        justify-content: center
+    .mini
+        font-size: 10px
+        display: none
+    .listSect2
+        list-style-type: none
+        text-align: center
+    .decoNone
+        text-decoration: none
+// responsive ----------------------------------------------------
